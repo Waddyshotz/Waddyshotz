@@ -120,6 +120,94 @@ below 601px
   .grid-item > img {
     width: 100%;
   }
+
+  .booking {
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 50px 10px #00000035;
+    /* border: rgb(1, 1, 1) solid; */
+    width: fit-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-tabs {
+    display: flex;
+    font-size: 12px;
+    flex-wrap: wrap;
+    width: 599px;
+  }
+
+  .tabs {
+    padding: 20px 90px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .tabs:hover {
+    background-color: rgb(221, 221, 221);
+  }
+
+  .ch-appoint {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .book-info > img {
+    height: 80vh;
+  }
+
+  .booking-category {
+    box-shadow: 5px 5px 5px 5px #00000035;
+    padding: 20px 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .booking-card {
+    display: flex;
+    padding: 10px 25px;
+    gap: 30px;
+    height: auto;
+  }
+
+  .book-img {
+    align-self: center;
+  }
+
+  .book-img > img {
+    width: 200px;
+  }
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  .buttons {
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .box-card {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  
 }
 
 /* 
