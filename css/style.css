@@ -161,7 +161,7 @@ below 601px
   }
 
   .book-info > img {
-    height: 80vh;
+    width: 80vw;
   }
 
   .booking-category {
