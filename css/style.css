@@ -118,7 +118,7 @@ below 601px
   }
 
   .grid-item > img {
-    width: 100%;
+    width: 100vw;
   }
 
   .booking {
@@ -137,7 +137,7 @@ below 601px
     display: flex;
     font-size: 12px;
     flex-wrap: wrap;
-    width: 599px;
+    width: 100vw;
   }
 
   .tabs {
