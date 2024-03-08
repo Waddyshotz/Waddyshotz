@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>WaddyShotz</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  </head>
+  <body>
+    <!-- First - we need to create a navigation bar with the name and the menu
+    dropdown. -->
+
+    <section class="nav-bar">
+      <div class="logo">
+        <img src="./icon:logo/waddyshotz.png" alt="" />
+      </div>
+
+      <!-- The menu dropdown will have:/// 1. Gallery(which is going to be the main page///
+      2. Booking with the options to book services/// 3. Term & Condition/// 4. About
+      me) -->
+
+      <div class="menu-links">
+        <div class="links">
+          <a href="#" class="tablinks" onclick="openTab(event, 'main-section')"
+            >Gallery</a
+          >
+          <a
+            href="#"
+            class="tablinks"
+            onclick="openTab(event, 'booking-section')"
+            >Booking</a
+          >
+          <a
+            href="#"
+            class="tablinks"
+            onclick="openTab(event, 'contact-section')"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="tablinks"
+            onclick="openTab(event, 'term-condition')"
+            >Terms & Condition</a
+          >
+        </div>
+        <!-- this div below is for IG link -->
+        <!-- <div class="link-img">
+          <a href="" class="ig-link"
+            ><img src="../images/ig logo.jpeg" alt=""
+          /></a>
+        </div> -->
+      </div>
+
+      <div class="sm-screen-menu-link">
+        <!-- <button class="dd-btn">
+          
+        </button> -->
+        <a href="#" class="top-menu">+</a>
+      </div>
+    </section>
+
+    <!-- this is the gallery section -->
+    <section id="main-section" class="tab-content active">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="./Gallery Image/image01.JPG" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image02.JPG" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image03.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image15.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image04.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image05.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image06.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image10.JPG" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image11.jpeg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image12.JPG" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image13.JPG" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="./Gallery Image/image14.JPG" alt="" />
+        </div>
+
+        <!-- <div class="grid-item">
+          <img src="./Gallery Image/image16.jpeg" alt="" />
+        </div> -->
+      </div>
+    </section>
+
+    <!-- this section below is for the booking -->
+    <section class="booking tab-content" id="booking-section">
+      <!-- this is for the menu tab -->
+      <div class="booking-tabs">
+        <a href="#ch-appoint" class="primary tabs">Choose Appointment</a>
+        <a href="" class="secondary tabs">Your Info</a>
+        <a href="" class="tierce tabs">Confirmation</a>
+      </div>
+
+      <!-- below is the choose appointment section -->
+
+      <div class="ch-appoint primary-tab">
+        <!-- first we put the flier -->
+        <div class="book-info">
+          <img src="./icon:logo/flyer.jpg" alt="" />
+        </div>
+
+        <!-- then the booking categories -->
+
+        <!-- first card -->
+
+        <div class="booking-category" id="">
+          <!-- the different type of service -->
+          <div class="booking-card">
+            <div class="book-img">
+              <img src="./Gallery Image/image01.JPG" alt="" />
+            </div>
+            <div class="text-box">
+              <div>
+                <h3>1 hour lifestyle shoot</h3>
+                <p>1 hour @ <span>$200.00</span></p>
+              </div>
+
+              <div>
+                <p>($50.00 Non-Refundable Deposit Required To Secure Slot)</p>
+                <ul>
+                  <li>+ All Raw Photos</li>
+                  <li>+ 6 High End Retouched Photos</li>
+                  <!-- <li>+ 2 Printed 4x6</li> -->
+                </ul>
+                <p>(Outfit change is allowed as long as time permits)</p>
+                <p>1-3 Day Turnaround For Final Edits</p>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="#" class="buttons">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of category -->
+
+        <!-- second card -->
+
+        <div class="booking-category" id="">
+          <!-- the different type of service -->
+          <div class="booking-card">
+            <div class="book-img">
+              <img src="./Gallery Image/image16.jpeg" alt="" />
+            </div>
+            <div class="text-box">
+              <div>
+                <h3>2 hour Studio Photoshoot</h3>
+                <p>2 hour @ <span>$275.00</span></p>
+              </div>
+
+              <div>
+                <p>
+                  (50% Non-Refundable Deposit Required To <br />Secure Slot)
+                </p>
+                <p>This will cover studio time</p>
+                <ul>
+                  <li>+ All Raw Photos</li>
+                  <li>+ 6 High End Retouched Photos</li>
+                  <!-- <li>+ 2 Printed 4x6</li> -->
+                </ul>
+                <p>(Outfit change is allowed as long as time permits)</p>
+                <p>2-4 Day Turnaround For Final Edits</p>
+                <br />
+                <p>
+                  If additional Equipments is needed <br />I will advices before
+                  hand.
+                </p>
+                <p>
+                  (please be advised that I do not own a studio space. <br />One
+                  will have to be rented. So time slots <br />will be adjusted
+                  accordingly.)
+                </p>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="#" class="buttons">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of category -->
+      </div>
+    </section>
+
+    <!-- this section is for the contact and about me  -->
+    <section id="contact-section" class="tab-content">
+      <div class="contact-section">
+        <div class="about-me">
+          <p>
+            Hello, everyone. I'm Wadle, a self-taught photographer with a
+            passion for capturing life's beauty. My journey began in 2018 when I
+            first picked up a DSLR camera, and I've been hooked ever since. With
+            a diploma in hand, I've honed my skills and developed a unique style
+            that blends art, travel, and anime influences. I thrive on creative
+            conversations and enjoy exploring new ideas. When working with me,
+            you can expect a fun and collaborative experience that yields
+            stunning results. Let's create unforgettable memories through my
+            lens!
+          </p>
+        </div>
+        <div class="contact-links">
+          <a
+            href="https://www.instagram.com/_waddyshotz_/?igsh=b243aDVqc2d3eXln&utm_source=qr"
+            target="_blank"
+          >
+            <img src="../images/instagram-clipart-logo-black-4.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <h2>Email</h2>
+
+          <form
+            id="emailForm"
+            action="mailto:waddyshotz@gmail.com"
+            method="post"
+            enctype="text/plain"
+            onsubmit="return validateForm()"
+          >
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" required />
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Email" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- this section is for terms & Condition -->
+
+    <section id="term-condition" class="tab-content">
+      <ul>
+        <li>
+          After the raw Photos are delivered, you will have 48 hours from the
+          time they are delivered to send back the desired amount of photos you
+          want edited. Please note that your request for edits will be voided
+          after that timeframe.
+        </li>
+        <li>Deposit / Payments:</li>
+      </ul>
+    </section>
+
+    <!-- this the footer of every pages -->
+
+    <footer>
+      <div class="logo-bottom">
+        <img src="./icon:logo/waddyshotz.png" alt="" />
+      </div>
+      <div>
+        <p>&copy Copyrights WaddyShotz - 2018</p>
+      </div>
+      <div>
+        <a href="">Terms & Conditions</a>
+      </div>
+    </footer>
+
+    <script src="./script/main.js"></script>
+  </body>
+</html>
