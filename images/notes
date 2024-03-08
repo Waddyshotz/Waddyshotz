@@ -1,0 +1,41 @@
+<!-- second card  -->
+
+<div class="booking-category">
+  <!-- the different type of service -->
+  <div class="booking-card">
+    <div class="book-img">
+      <img src="../website/images/IMG_1192.JPG" alt="" />
+    </div>
+    <div class="text-box">
+      <div>
+        <h3>2 hour Studio Photoshoot</h3>
+        <p>2 hour @ <span>$275.00</span></p>
+      </div>
+
+      <div>
+        <p>(50% Non-Refundable Deposit Required To <br />Secure Slot)</p>
+        <p>This will cover studio time</p>
+        <ul>
+          <li>+ All Raw Photos</li>
+          <li>+ 6 High End Retouched Photos</li>
+          <!-- <li>+ 2 Printed 4x6</li> -->
+        </ul>
+        <p>(Outfit change is allowed as long as time permits)</p>
+        <p>2-4 Day Turnaround For Final Edits</p>
+        <br />
+        <p>
+          If additional Equipments is needed <br />I will advices before hand.
+        </p>
+        <p>
+          (please be advised that I do not own a studio space. <br />One will
+          have to be rented. So time slots <br />will be adjusted accordingly.)
+        </p>
+      </div>
+    </div>
+    <div>
+      <a href="" class="buttons" onclick="toggleTab('book2')">Book</a>
+    </div>
+  </div>
+</div>
+
+<!-- third card below -->
