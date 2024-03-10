@@ -25,7 +25,7 @@ li {
   list-style: none;
 }
 
-/* this is the navigation bar section that I have added */
+/* THIS IS THE THE NAVIGATION BAR SECTION THAT I HAVE ADDED */
 
 .nav-bar {
   display: flex;
@@ -59,7 +59,7 @@ a {
   text-align: center;
 }
 
-/* this is the main section where the gallery is  */
+/* THIS IS THE MAIN SECTION WHERE THE GALLERY IS  */
 
 .gallery {
   margin-top: 50px;
@@ -76,8 +76,7 @@ a {
   width: 80vw;
 }
 
-/* css codes for the booking part of the website 
-with the pictures and other information  */
+/* CSS CODES FOR THE BOOKING PART OF THE WEBSITE WITH THE PICTURES AND OTHER INFORMATIONS */
 
 .booking {
   width: 100vw;
@@ -86,7 +85,7 @@ with the pictures and other information  */
   padding: 0 0 70px;
 }
 
-/* booking navbar */
+/* BOOKING SECTION NAVIGATION TABS */
 
 .booking-tabs {
   display: flex;
@@ -107,7 +106,7 @@ with the pictures and other information  */
   background-color: var(--primary-color);
 }
 
-/* booking info */
+/* BOOKING INFO */
 
 .ch-appoint {
   width: 100vw;
@@ -169,6 +168,101 @@ with the pictures and other information  */
   padding: 20px 60px;
   color: var(--white-text-color);
   border-radius: 15px;
+}
+
+/* THIS IS FOR THE CONTACT PAGE */
+
+.contact {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px;
+  gap: 50px;
+}
+
+.contact-logo {
+  height: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: var(--big-text-color);
+  color: var(--white-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--third-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: var(--big-text-color);
+  color: var(--white-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--third-color);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: var(--big-text-color);
+  color: var(--white-text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--third-color);
 }
 
 /* THIS IS FOR THE FOOTER CSS CODES  */
