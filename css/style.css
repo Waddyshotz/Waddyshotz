@@ -1,601 +1,192 @@
-/* Important CSS main code */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none !important;
+/* CSS VARIABLES */
+
+:root {
+  --primary-color: #eeeeee;
+  --secondary-color: #ffffff;
+  --third-color: #313131;
+  --big-text-color: #000000;
+  --small-text-color: #313131;
+  --white-text-color: #ffffff;
 }
+
+/* GENERAL CODES FOR CSS COMMON ITEMS */
 
 body {
-  background-color: #efeeee;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-}
-
-p,
-li {
-  font-size: small;
-  font-family: "Montserrat", sans-serif;
-  color: #5e5c5c;
+  background-color: var(--primary-color);
 }
 
 li {
   list-style: none;
 }
 
+/* this is the navigation bar section that I have added */
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.logo > img {
+  width: 200px;
+}
+
+.menu-links {
+  display: flex;
+  width: 100vw;
+}
+.links {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: var(--big-text-color);
+  text-align: center;
+}
+
+/* this is the main section where the gallery is  */
+
+.gallery {
+  margin-top: 50px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.grid-item {
+  width: 80vw;
+}
+
+/* css codes for the booking part of the website 
+with the pictures and other information  */
+
+.booking {
+  width: 100vw;
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 0 0 70px;
+}
+
+/* booking navbar */
+
+.booking-tabs {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  gap: 0;
+  background-color: var(--secondary-color);
+}
+
+.tabs {
+  text-align: center;
+  padding: 20px;
+  width: 33.333%;
+  font-size: 10px;
+}
+
+.tabs:hover {
+  background-color: var(--primary-color);
+}
+
+/* booking info */
+
+.ch-appoint {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flyer-img {
+  width: 80vw;
+  margin: 10px 0 40px;
+  box-shadow: 10px 10px 20px #00000050;
+}
+
+/* THIS IS FOR THE BOOKING CATEGORY */
+
+.booking-category {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+}
+
+.booking-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  gap: 40px;
+  padding: 5% 10% 5%;
+  justify-content: space-evenly;
+  background-color: var(--primary-color);
+  box-shadow: 10px 10px 20px #00000050;
+}
+
+.booking-card-img {
+  width: 100%;
+}
+
+/* BOOKING CARD TEXT AREA */
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.text-box > div > h3 {
+  text-transform: uppercase;
+}
+
+.text-box > div > p {
+  font-size: 14px;
+}
+
+.buttons {
+  background-color: var(--third-color);
+  padding: 20px 60px;
+  color: var(--white-text-color);
+  border-radius: 15px;
+}
+
+/* THIS IS FOR THE FOOTER CSS CODES  */
+
 footer {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-  padding-right: 15px;
+  justify-content: space-around;
+  gap: 30px;
+  margin: 30px 10px 10px;
 }
 
 .logo-bottom > img {
-  width: 100px;
+  width: 80px;
 }
 
-/* javascript code for css */
-
-/* We need to create a template for the colors */
-
-/* this is the css for the gallery section */
-
-/* this is the css for the booking section */
-
-/* 
-Small size
-mediaQuerry for phone size
-below 601px
-
-@media (max-width: 600px){}
-*/
-
-@media (max-width: 600px) {
-  body {
-    background-color: white;
-  }
-
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .top-menu {
-    display: none;
-  }
-
-  .logo > img {
-    width: 120px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-  }
-
-  .menu-links {
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
-
-  a {
-    font-family: "Montserrat", sans-serif;
-    font-size: larger;
-    color: black;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    width: 300px;
-    height: 600px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-item > img {
-    width: 100vw;
-  }
-
-  .booking {
-    margin-top: 50px;
-    background-color: #ffffff;
-    box-shadow: 3px 5px 50px 10px #00000035;
-    /* border: rgb(1, 1, 1) solid; */
-    width: fit-content;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .booking-tabs {
-    display: flex;
-    font-size: 12px;
-    flex-wrap: wrap;
-    width: 100vw;
-  }
-
-  .tabs {
-    padding: 20px 90px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    font-family: "Raleway", sans-serif;
-  }
-
-  .tabs:hover {
-    background-color: rgb(221, 221, 221);
-  }
-
-  .ch-appoint {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-
-  .book-info > img {
-    width: 80vw;
-  }
-
-  .booking-category {
-    box-shadow: 5px 5px 5px 5px #00000035;
-    padding: 20px 0;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .booking-card {
-    display: flex;
-    padding: 10px 25px;
-    gap: 30px;
-    height: auto;
-  }
-
-  .book-img {
-    align-self: center;
-  }
-
-  .book-img > img {
-    width: 200px;
-  }
-
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
-  }
-
-  .buttons {
-    padding: 10px 50px;
-    border-radius: 5px;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .box-card {
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-  }
-
-  
-}
-
-/* 
-medium size
-mediaQuerry for Tablette & Laptop size
-starting from 601px
-
-@media (min-width: 601px){}
-*/
-
-@media (min-width: 601px) {
-  .nav-bar {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 120px 0 20px;
-  }
-
-  .logo > img {
-    width: 190px;
-  }
-
-  .menu-links {
-    display: none;
-  }
-
-  a {
-    font-family: "Montserrat", sans-serif;
-    font-size: larger;
-    color: black;
-  }
-
-  .sm-screen-menu-link {
-    rotate: 90deg;
-  }
-
-  /* .dd-btn {
-    background-color: #000000;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 10px;
-  } */
-
-  .top-menu {
-    font-size: 62px;
-    font-weight: 100;
-    /* color: #fff; */
-  }
-
-  .booking {
-    background-color: #fff;
-    box-shadow: 3px 5px 50px 10px #00000035;
-    /* border: rgb(1, 1, 1) solid; */
-    width: fit-content;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .booking-tabs {
-    display: flex;
-    width: 100%;
-  }
-
-  .tabs {
-    padding: 20px 90px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    font-family: "Raleway", sans-serif;
-  }
-
-  .tabs:hover {
-    background-color: rgb(221, 221, 221);
-  }
-
-  /* .booking-tabs > .primary {
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-      }
-      
-      .booking-tabs > .secondary {
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-      }
-      
-      .booking-tabs > .tierce {
-        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-      } */
-
-  .ch-appoint {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-
-  .book-info > img {
-    height: 90vh;
-  }
-
-  .booking-category {
-    box-shadow: 5px 5px 5px 5px #00000035;
-    padding: 20px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .booking-card {
-    display: flex;
-    padding: 10px 25px;
-    gap: 30px;
-    height: 350px;
-  }
-
-  .book-img {
-    align-self: center;
-  }
-
-  .book-img > img {
-    width: 200px;
-  }
-
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
-  }
-
-  .buttons {
-    padding: 10px 50px;
-    border-radius: 5px;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .box-card {
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    gap: 30px;
-  }
-  .grid-item {
-    width: 400px;
-    height: 600px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-item > img {
-    width: 100%;
-  }
-}
-
-/* 
-Large size
-mediaQuerry for Tablette & Laptop size
-starting from 900px
-
-@media (min-width: 900px){}
-*/
-
-@media (min-width: 1240px) {
-  .nav-bar {
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 120px 0 20px;
-  }
-
-  /* this is for the navigation */
-
-  .logo > img {
-    width: 190px;
-  }
-
-  .menu-links {
-    display: flex;
-    align-items: center;
-    gap: 190px;
-  }
-
-  .sm-screen-menu-link {
-    display: none;
-  }
-
-  .links {
-    display: flex;
-    gap: 40px;
-  }
-
-  .links > a {
-    font-family: "Montserrat", sans-serif;
-    font-size: larger;
-    color: black;
-  }
-
-  .ig-link > img {
-    width: 30px;
-  }
-  /* this is for the gallery  */
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    gap: 30px;
-  }
-  .grid-item {
-    width: 400px;
-    height: 600px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-item > img {
-    width: 400px;
-  }
-
-  /* this is for the booking */
-
-  .booking {
-    background-color: #fff;
-    box-shadow: 3px 5px 50px 10px #00000035;
-    /* border: rgb(1, 1, 1) solid; */
-    width: fit-content;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .booking-tabs {
-    display: flex;
-    width: 100%;
-  }
-
-  .tabs {
-    padding: 20px 90px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    font-family: "Raleway", sans-serif;
-  }
-
-  .tabs:hover {
-    background-color: rgb(221, 221, 221);
-  }
-
-  /* .booking-tabs > .primary {
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-      }
-      
-      .booking-tabs > .secondary {
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-      }
-      
-      .booking-tabs > .tierce {
-        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-      } */
-
-  .ch-appoint {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-
-  .book-info > img {
-    height: 90vh;
-  }
-
-  .booking-category {
-    box-shadow: 5px 5px 5px 5px #00000035;
-    padding: 20px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .booking-card {
-    display: flex;
-    padding: 10px 25px;
-    gap: 30px;
-    height: 350px;
-  }
-
-  .book-img {
-    align-self: center;
-  }
-
-  .book-img > img {
-    width: 200px;
-  }
-
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
-  }
-
-  .buttons {
-    padding: 10px 50px;
-    border-radius: 5px;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .box-card {
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-  }
-
-  /* this below is for the contact section */
-
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 90px;
-  }
-
-  .about-me {
-    padding: 40px;
-    width: 900px;
-  }
-
-  .about-me > p {
-    font-size: larger;
-    text-align: center;
-    line-height: 2;
-  }
-
-  .contact-links > a > img {
-    width: 60px;
-    align-self: center;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
-  /* this is the css for the tabs showing */
-  .tab-content {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
+.footer-text {
+  font-size: 10px;
+  color: var(--small-text-color);
 }
