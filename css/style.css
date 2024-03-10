@@ -265,6 +265,26 @@ input[type="submit"]:hover {
   background-color: var(--third-color);
 }
 
+/* THIS IS THE TERMS & CONDITIONS SECTION OF THE WEBPAGE */
+
+.terms {
+  width: 100vw;
+  padding: 100px;
+}
+
+.terms > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.terms > ul > ul {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* THIS IS FOR THE FOOTER CSS CODES  */
 
 footer {
