@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* THIS IS FOR THE NAVIGATION BAR CSS  */
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.logo > img {
+  width: 200px;
+}
+
+.menu-links {
+  display: flex;
+  width: 100vw;
+}
+.links {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: var(--big-text-color);
+  text-align: center;
+}
+
+/* END OF THE NAVIGATION BAR CSS */
