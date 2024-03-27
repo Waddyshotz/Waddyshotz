@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>WaddyShotz</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
@@ -25,21 +25,20 @@
         <img src="./icon:logo/waddyshotz.png" alt="" />
       </div>
 
+      <!-- <div id="btnType" class="dropdown-btn">
+        <img id="btn" src="./icon:logo/dropdown-icon.png" alt="" class="btn" />
+      </div> -->
+
       <!-- The menu dropdown will have:/// 1. Gallery(which is going to be the main page///
       2. Booking with the options to book services/// 3. Term & Condition/// 4. About
       me) -->
 
-      <div class="menu-links">
+      <div id="menu" class="menu-links dropdown-content">
         <div class="links">
           <a href="#" class="tablinks" onclick="openTab(event, 'main-section')"
             >Gallery</a
           >
-          <a
-            href="#"
-            class="tablinks"
-            onclick="openTab(event, 'booking-section')"
-            >Booking</a
-          >
+          <a href="booking.html" class="tablinks">Booking</a>
           <a
             href="#"
             class="tablinks"
@@ -53,11 +52,12 @@
             >Terms & Condition</a
           >
         </div>
-        
       </div>
     </section>
 
-    <!-- this is the gallery section -->
+    <!-- and then we create a gallery for the pictures
+      where they will be displayed this is the gallery section -->
+
     <section id="main-section" class="tab-content active gallery">
       <div class="grid-container">
         <img class="grid-item" src="./image01.JPG" alt="" />
@@ -75,202 +75,19 @@
       </div>
     </section>
 
-    <!-- THIS SECTION BELOW IS FOR THE BOOKING PAGE -->
-    <section class="booking tab-content" id="booking-section" style="display: none">
-      <!-- THIS IS FOR THE MENU TABS -->
-      <div class="booking-tabs">
-        <a href="#ch-appoint" class="primary tabs">Choose Appointment</a>
-        <a href="" class="secondary tabs">Your Info</a>
-        <a href="" class="tierce tabs">Confirmation</a>
-      </div>
+    <!-- this section is for the contact and about me  -->
 
-      <!-- BELOW IS THE CHOOSE APPOINTMENT SECTION -->
-
-      <div class="ch-appoint primary-tab">
-        <!-- FIRST WE PUT THE FLYER -->
-        <div class="book-info">
-          <img src="./icon:logo/flyer.jpg" alt="" class="flyer-img"/>
-        </div>
-
-        <!-- THEN THE BOOKING CATEGORIES -->
-
-        
-
-        <div class="booking-category" id="">
-
-          <!-- FIRST CARD -->
-          
-          <div class="booking-card">
-        
-              <img src="./image02.JPG" alt="" class="booking-card-img"/>
-            
-            <div class="text-box">
-              <div>
-                <h3>1 hour lifestyle shoot</h3>
-                <p>1 hour @ <span>$200.00</span></p>
-              </div>
-
-              <div>
-                <p>($50.00 Non-Refundable Deposit Required To Secure Slot)</p>
-                <ul>
-                  <li>+ All Raw Photos</li>
-                  <li>+ 6 High End Retouched Photos</li>
-                  
-                </ul>
-                <p>(Outfit change is allowed as long as time permits)</p>
-                <p>1-3 Day Turnaround For Final Edits</p>
-              </div>
-            </div>
-            
-              <a href="#" class="buttons">Book</a>
-            
-          </div>
-
-          <!-- SECOND CARD -->
-          
-          <div class="booking-card">
-            <div class="book-img">
-              <img
-                src="./image06.jpeg"
-                alt=""
-                class="booking-card-img"
-              />
-            </div>
-            <div class="text-box">
-              <div>
-                <h3>2 hour Studio Photoshoot</h3>
-                <p>2 hour @ <span>$275.00</span></p>
-              </div>
-
-              <div>
-                <p>
-                  (50% Non-Refundable Deposit Required To <br />Secure Slot)
-                </p>
-                <p>This will cover studio time</p>
-                <ul>
-                  <li>+ All Raw Photos</li>
-                  <li>+ 6 High End Retouched Photos</li>
-                </ul>
-                <p>(Outfit change is allowed as long as time permits)</p>
-                <p>2-4 Day Turnaround For Final Edits</p>
-                <br />
-                <p>
-                  If additional Equipments is needed <br />I will advices before
-                  hand.
-                </p>
-                <p>
-                  (please be advised that I do not own a studio space. <br />One
-                  will have to be rented. So time slots <br />will be adjusted
-                  accordingly.)
-                </p>
-              </div>
-            </div>
-
-            <a href="#" class="buttons">Book</a>
-          </div>
-          
-        </div>
-
-        <!-- END OF CATERGORY -->
-      </div>
-    </section>
-
-    <!-- THIS IS THE CONTACT ME SECTION OF THE WEBSITE  -->
-    <section id="contact-section" class="tab-content contact" style="display: none">
-      <div class="contact-section">
-        <div class="about-me">
-          <p>
-            Hello, everyone. I'm Wadle, a self-taught photographer with a
-            passion for capturing life's beauty. My journey began in 2018 when I
-            first picked up a DSLR camera, and I've been hooked ever since. With
-            a diploma in hand, I've honed my skills and developed a unique style
-            that blends art, travel, and anime influences. I thrive on creative
-            conversations and enjoy exploring new ideas. When working with me,
-            you can expect a fun and collaborative experience that yields
-            stunning results. Let's create unforgettable memories through my
-            lens!
-          </p>
-        </div>
-        <div class="contact-links">
-          <a
-            href="https://www.instagram.com/_waddyshotz_/?igsh=b243aDVqc2d3eXln&utm_source=qr"
-            target="_blank"
-          >
-            <img src="./icon:logo/instagram-clipart-logo-black-4.png" alt="" class="contact-logo"/>
-          </a>
-        </div>
-        <div>
-          <h2>Email</h2>
-
-          <form
-            id="emailForm"
-            action="mailto:waddyshotz@gmail.com"
-            method="post"
-            enctype="text/plain"
-            onsubmit="return validateForm()"
-          >
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Your Email:</label>
-            <input type="text" id="email" name="email" required />
-
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Send Email" />
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- THIS SECTION IS FOR THE TERMS & CONDITIONS -->
-
-    <section
-      id="term-condition"
-      class="tab-content terms"
-      style="display: none"
-    >
-      <ul>
-        <li>
-          After the raw Photos are delivered, you will have 48 hours from the
-          time they are delivered to send back the desired amount of photos you
-          want edited. Please note that your request for edits will be voided
-          after that timeframe.
-        </li>
-        <li>Deposit / Payments:</li>
-        <ul>
-          <li>
-            A 50% non-refundable Deposit is required for all appointments.
-          </li>
-          <li>The deposit is deducted from the total shoot amount.</li>
-          <li>
-            The remaining balance (also non-refundable is due in full upon
-            completion of the photo session. Payments can be)
-          </li>
-        </ul>
-      </ul>
-    </section>
-
-    <!-- THIS IS THE FOOTER OF THE WEBSITE -->
+    <!-- this the footer of every pages -->
 
     <footer>
       <div class="logo-bottom">
         <img src="./icon:logo/waddyshotz.png" alt="" />
       </div>
-      <div>
+      <div class="footer-text">
         <p>&copy Copyrights WaddyShotz - 2018</p>
       </div>
-      <div>
-        <a
-            href="https://www.instagram.com/_waddyshotz_/?igsh=b243aDVqc2d3eXln&utm_source=qr"
-            target="_blank"
-          >
-            <img src="./icon:logo/instagram-clipart-logo-black-4.png" alt="" class="contact-logo"/>
-          </a>
+      <div class="footer-text">
+        <a href="#term-and-condition">Terms & Conditions</a>
       </div>
     </footer>
 
