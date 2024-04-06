@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* NAVIGATION BAR CSS BELOW */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 50px;
+  background-color: #c7c7c7;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.menu-links > a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.menu-links > a:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+/* END OF THE NAVIGATION BAR CSS */
+
+.main {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100vw;
+}
+
+.grid-items {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.grid-items > img {
+  width: 95%;
+}
+
+/* THIS CSS BELOW IS FOR THE FOOTER SECTION */
+
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 0 50px 0;
+  gap: 40px;
+}
+
+.topper {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topper > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.topper > div > a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+}
+
+.under {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sec-2 {
+  display: flex;
+  gap: 10px;
+  color: rgb(97, 97, 97);
+}
+
+/* END OF THE FOOTER CSS */
